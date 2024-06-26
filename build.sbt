@@ -10,7 +10,7 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "JenkinsProject",
+    name := "scala_jenkins",
     idePackagePrefix := Some("org.jenkins.com")
   )
 
