@@ -1,18 +1,8 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+name := "scala_jenkin"
 
-ThisBuild / scalaVersion := "2.11.12"
+version := "0.1"
 
-// https://mvnrepository.com/artifact/org.apache.spark/spark-core
-libraryDependencies += "org.apache.spark" %% "spark-core" % "2.4.7"
+scalaVersion := "2.12.15"
 
-// https://mvnrepository.com/artifact/org.apache.spark/spark-sql
-//libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.2.0"
-
-lazy val root = (project in file("."))
-  .settings(
-    name := "scala_jenkins",
-    idePackagePrefix := Some("org.jenkins.com")
-  )
-
 
